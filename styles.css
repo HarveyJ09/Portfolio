@@ -1,0 +1,47 @@
+body {
+    background-color: #f6f9fc;
+    font-family: "SN Pro", sans-serif;
+}
+
+.sn-pro-font> {
+  font-family: "SN Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+}
+
+.introContainer {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    position: relative;
+    margin:auto;
+    height: 352px;
+    width: 1000px;
+}
