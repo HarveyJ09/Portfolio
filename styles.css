@@ -192,6 +192,32 @@ body {
     margin-right: 10px;
     padding: 8px;}
 
+.projectsContainer .projectCard .projectContent .projectLinks {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.projectsContainer .projectCard .projectContent .projectLinks .projectLink {
+    background: #747fe0;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-size: .9em;
+    font-weight: 600;
+    letter-spacing: .025em;
+    line-height: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 0 14px;
+    text-decoration: none;
+    transition: all .15s ease;
+    white-space: nowrap;
+}
 .div{
     display: block;
     unicode-bidi: isolate;
