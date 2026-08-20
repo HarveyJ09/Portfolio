@@ -1,6 +1,9 @@
 body {
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "pnum";
     background-color: #f6f9fc;
-    font-family: "SN Pro", sans-serif;
+    font-variant-numeric: proportional-nums;
+    text-rendering: optimizeLegibility;
 }
 
 .sn-pro-font> {
@@ -9,39 +12,187 @@ body {
   font-weight: 300;
   font-style: normal;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-ul li {
-  float: right;
-}
-
-ul li a {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  
-}
-
-
-.container {
+.navbarContainer {
     display: flex;
-    justify-content: flex-start; /* Aligns content to the left */
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.navBar {
+    display: flex;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-size: 1.2em;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 286px;
+}
+
+.navbarContainer a {
+    color: #5a5d7a;
+    position: relative;
+    text-decoration: none;
+}
+
+.mainContainer {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 40px;
+}
+
+.navbarContainer .navBar a {
+                color: #5a5d7a;
+                position: relative;
+                text-decoration: none
+}
+
+.navbarContainer .navBar {
+                display: flex;
+                font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+                font-size: 1.2em;
+                justify-content: space-around;
+                margin-top: 40px;
+                width: 286px
 }
 
 .introContainer {
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 20vh auto 0;
+}
+
+.introTitle {
+    color: #747fe0;
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+    font-size: 4.5em;
+}
+
+.introDescription{
+    color: #525f7f;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-size: 1.3em;
+    font-weight: 200;
+    line-height: 40px;
+    margin: 80px 0;
+}
+
+.aboutContainer {
+  margin: 0 auto;
+}
+
+.aboutWindow {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.boutContainerWindow {
+    background-color: #5a5d7a;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .12);
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+
+.aboutContainer .aboutWindow .aboutContainerWindow {
+    background-color: #5a5d7a;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .12);
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+
+.inputStatement {
+  color: #f7f7f7;
+}
+
+.outputStatement {
+  color: #e7d184;
+}
+
+.statement {
+  color: #f7f7f7;
+}
+
+.aboutContainer .aboutWindow .aboutContainerWindow .statement:first-child {
+    padding-top: 35px;
+}
+
+.aboutContainer .aboutWindow .aboutContainerWindow .statement {
+    line-height: 24px;
+    margin-bottom: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.sectionTitle {
+    color: #525f7f;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.projectsContainer {
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    margin: 0 auto;
+}
+
+.projectCard {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .05), 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    overflow: hidden;
     position: relative;
-    margin:auto;
-    height: 352px;
-    width: 1000px;
+}
+
+.projectsContainer .projectCard .projectImage {
+    left: 0;
+    position: absolute !important;
+    top: 0;
+    width: 80%;
+}
+
+.projectsContainer .projectCard .projectContent {
+    padding: 60px;
+    width: 50%;
+    z-index: 2;
+}
+
+.projectsContainer .projectCard .projectContent .projectSkills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectsContainer .projectCard .projectBackground {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NDYiIGhlaWdodD0iMzE2IiB2aWV3Qm94PSIwIDAgNDQ2IDMxNiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjc0LjU1IDMxNkg0NDZWMEg3OS43NzhMNTEuOTYxIDExMS4zMDcgMTAzLjA5OCAzMTZ6Ii8+PHBhdGggZmlsbD0iI2MxZGRmZiIgZD0iTTI0LjE1MSAwSDc5Ljg1TDUxLjk2IDExMS4zMjF6IiBvcGFjaXR5PSIuNTU3Ii8+PHBhdGggZmlsbD0iIzkzODdlNCIgZD0iTTUxLjk2IDExMS4zMTggMTAzLjExIDMxNkguNzk4eiIgb3BhY2l0eT0iLjUyNyIvPjwvZz48L3N2Zz4=);
+    background-size: cover;
+    height: 110%;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 83%;
+}
+
+.projectsContainer .projectCard .projectContent .projectSkills .projectSkill {
+    border: 2px solid #92eac0;
+    border-radius: 4px;
+    color: #525f7f;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-size: .85em;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 8px;}
+
+.div{
+    display: block;
+    unicode-bidi: isolate;
 }
